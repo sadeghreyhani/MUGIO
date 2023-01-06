@@ -1,0 +1,54 @@
+/* Reset styles
+   ========================================================================== */
+   html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 3rem;
+
+    color: #333333;
+}
+
+
+/* Remove default margins and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove default styles from headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+  
+  /* Remove default styles from lists */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default styles from tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Remove default styles from form elements */
+  button, input, select, textarea {
+    background: none;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: none;
+    padding: 0;
+  }
+  
+  /* Remove default styles from links */
+  a {
+    text-decoration: none;
+  }
+  

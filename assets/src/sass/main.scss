@@ -1,3 +1,41 @@
-@import "settings/settings";
-@import "elements/elements";
-@import "components/component";
+
+// ////////////////
+//Settings/////////
+// ////////////////
+@import 'settings/fonts';
+@import 'settings/variables';
+
+// ////////////////
+//Tools////////////
+// ////////////////
+@import "tools/mixins";
+@import "tools/typography-mixins";
+
+// ////////////////
+//Generic//////////
+// ////////////////
+@import 'generic/reset';
+@import 'generic/normalize';
+
+// ////////////////
+//Elements/////////
+// ////////////////
+@import 'elements/btn';
+
+// ////////////////
+//Objects//////////
+// ////////////////
+
+// ////////////////
+//components///////
+// ////////////////
+@import 'components/header';
+@import 'components/about-section';
+@import 'components/grid-test';
+
+// ////////////////
+//Trumps///////////
+// ////////////////
+@import 'trumps/utilities';
+@import 'trumps/keyfreams';
+
