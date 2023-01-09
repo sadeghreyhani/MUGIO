@@ -145,11 +145,11 @@ button, input, select, textarea {
   background-color: #fff;
 }
 .btn--brown {
-  background-image: linear-gradient(to right bottom, #D2B48C, #6B3A0B);
+  background-image: linear-gradient(to right bottom, #5f5f5f, #000);
   color: #fff;
 }
 .btn--brown::after {
-  background-color: #6B3A0B;
+  background-color: #000;
 }
 .btn::after {
   content: "";
@@ -169,10 +169,10 @@ button, input, select, textarea {
 }
 
 .c-header {
-  background-image: linear-gradient(to right bottom, rgba(210, 180, 140, 0.5), rgba(107, 58, 11, 0.5)), url("https://picsum.photos/id/431/5000/3334");
+  background-image: linear-gradient(to right bottom, rgba(95, 95, 95, 0.5), rgba(0, 0, 0, 0.5)), url("https://shorturl.at/kuvY7");
   height: 95vh;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
@@ -220,7 +220,7 @@ button, input, select, textarea {
 
 .heading-tertiary {
   display: inline-block;
-  padding: 0.7rem;
+  padding: 0.7rem 0;
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -228,12 +228,12 @@ button, input, select, textarea {
   line-height: 34px;
   color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #D2B48C, #6B3A0B);
+  background-image: linear-gradient(to right, #5f5f5f, #000);
   transition: all 0.2s;
 }
 .heading-tertiary:hover {
   transform: skewY(2deg) skewX(15deg);
-  text-shadow: 0.5rem 1rem 2rem rgba(107, 58, 11, 0.2);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .paragraph:not(:last-child) {
@@ -243,21 +243,21 @@ button, input, select, textarea {
 .btn-text:visited, .btn-text:link {
   display: inline-block;
   padding: 0.5rem;
-  color: #6B3A0B;
-  border-bottom: 1px solid #6B3A0B;
+  color: #000;
+  border-bottom: 1px solid #000;
   transition: all 0.2s;
   font-weight: 700;
   letter-spacing: 0.15rem;
 }
 .btn-text:hover {
   transform: translateY(-0.5rem);
-  background-color: #6B3A0B;
+  background-color: #000;
   color: #fff;
-  box-shadow: 0 1rem 2rem rgba(107, 58, 11, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn-text:active {
   transform: translateY(0);
-  box-shadow: 0 0.5rem 1rem rgba(107, 58, 11, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .composition {
@@ -285,8 +285,8 @@ button, input, select, textarea {
 .composition__photo:hover {
   transform: scale(1.05);
   z-index: 20;
-  box-shadow: 0 2.5rem 4rem rgba(107, 58, 11, 0.4);
-  outline: 2rem inset rgba(107, 58, 11, 0.85);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+  outline: 2rem inset rgba(0, 0, 0, 0.85);
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
@@ -294,7 +294,7 @@ button, input, select, textarea {
 
 .c-features-section {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(210, 180, 140, 0.5), rgba(107, 58, 11, 0.5)), url("https://www.shorturl.at/ioINQ");
+  background-image: linear-gradient(to right bottom, rgba(95, 95, 95, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.shorturl.at/ioINQ");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -313,7 +313,7 @@ button, input, select, textarea {
 .c-feature-box__icon {
   font-size: 6rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #D2B48C, #6B3A0B);
+  background-image: linear-gradient(to right, #5f5f5f, #000);
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -457,16 +457,6 @@ button, input, select, textarea {
   position: relative;
   overflow: hidden;
 }
-.c-testiamonails-section__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.15;
-}
 
 .c-story {
   transform: skewX(-12deg);
@@ -516,6 +506,144 @@ button, input, select, textarea {
   filter: blur(3px) brightness(80%);
 }
 
+.news-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(105deg, #fff 0%, #fff 50%, #333 50%);
+}
+
+.c-news {
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("https://shorturl.at/nsvAS");
+  background-size: 100%;
+  background-position: center center;
+}
+.c-news__section {
+  width: 50%;
+  padding: 6rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__input {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem 2rem;
+  border: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: #999;
+  width: 90%;
+  display: block;
+  border-bottom: 3PX solid transparent;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 3PX solid #4CC552;
+}
+.form__input:focus:invalid {
+  border-bottom: 3PX solid #FF4136;
+}
+.form__lable {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  color: #999;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__lable {
+  opacity: 0;
+  transform: translateY(-4rem);
+  visibility: hidden;
+}
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-lable {
+  position: relative;
+  padding-left: 4rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: #5f5f5f;
+}
+.form__radio-button {
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  border: 5px solid #5f5f5f;
+  border-radius: 50%;
+}
+.form__radio-button::after {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #5f5f5f;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.form__radio-input:checked ~ .form__radio-lable .form__radio-button::after {
+  opacity: 1;
+}
+
+.c-footer {
+  padding: 15rem 0;
+  background-color: #333;
+  color: #fff;
+}
+.c-footer__logo-box {
+  margin-bottom: 8rem;
+  width: 15rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.c-footer__logo {
+  width: 15rem;
+  height: auto;
+}
+.c-footer__navigation {
+  border-top: 1.5px solid #777;
+  padding-top: 3rem;
+  display: inline-block;
+}
+.c-footer__link:link, .c-footer__link:visited {
+  background-color: #333;
+  transition: all 0.3s;
+  color: #fff;
+  display: inline-block;
+}
+.c-footer__link:hover, .c-footer__link:active {
+  transform: translateY(-0.8rem) scale(1.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.c-footer__item {
+  display: inline-block;
+}
+.c-footer__item:not(:last-child) {
+  padding-right: 1.5rem;
+}
+.c-footer__copy-right {
+  padding-top: 3rem;
+  border-top: 1.5px solid #777;
+  display: inline-block;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -560,19 +688,27 @@ button, input, select, textarea {
 }
 
 .u-text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-top-big {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
 }
 
 @keyframes moveInRight {

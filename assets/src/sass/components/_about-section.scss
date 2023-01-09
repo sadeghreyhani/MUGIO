@@ -11,7 +11,7 @@
 
 .heading-tertiary {
     display: inline-block;
-    padding: .7rem;
+    padding: .7rem 0;
     @include h2;
     color: transparent;
     -webkit-background-clip: text;
