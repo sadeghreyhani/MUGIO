@@ -168,6 +168,116 @@ button, input, select, textarea {
   animation-fill-mode: backwards;
 }
 
+.navigation__background {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background: radial-gradient(lightblue, #0000ff, #00008b);
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+}
+.navigation__input {
+  display: none;
+}
+.navigation__button {
+  text-align: center;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  width: 7rem;
+  height: 7rem;
+  cursor: pointer;
+  z-index: 2000;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+}
+.navigation__nav {
+  z-index: 1500;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: -8rem;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.navigation__item {
+  margin: 1rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: block;
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  font-weight: 300;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 225%;
+  transition: all 0.45s;
+}
+.navigation__link:hover, .navigation__link:active {
+  transform: translateX(1rem);
+  color: #000;
+  background-position: 100%;
+}
+.navigation__input:checked ~ .navigation__background {
+  transform: scale(80);
+}
+.navigation__input:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
+  left: 0;
+}
+.navigation__icon {
+  position: relative;
+  top: 3.4rem;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 3rem;
+  height: 3px;
+  display: inline-block;
+  background-color: #333;
+  transition: all 0.2s;
+}
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navigation__icon::before {
+  top: -0.8rem;
+}
+.navigation__icon::after {
+  top: 0.8rem;
+}
+.navigation__button:hover .navigation__icon::before {
+  top: -1.2rem;
+}
+.navigation__button:hover .navigation__icon::after {
+  top: 1.2rem;
+}
+.navigation__input:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+.navigation__input:checked + .navigation__button .navigation__icon::before {
+  transform: rotate(316deg);
+  top: 0;
+}
+.navigation__input:checked + .navigation__button .navigation__icon::after {
+  transform: rotate(-316deg);
+  top: 0;
+}
+
 .c-header {
   background-image: linear-gradient(to right bottom, rgba(95, 95, 95, 0.5), rgba(0, 0, 0, 0.5)), url("https://shorturl.at/kuvY7");
   height: 95vh;
