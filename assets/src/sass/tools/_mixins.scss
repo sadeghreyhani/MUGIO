@@ -1,7 +1,38 @@
 @mixin clearfix {
    &::after {
-    content: "";
-    display: table;
-    clear: both;
+      content: "";
+      display: table;
+      clear: both;
    }
+}
+
+@mixin abscontent {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/*
+$breakponit argument choise 
+_ phone
+_ tab-port
+_ tab-land
+_ big-desk
+*/
+@mixin respond($breakponit) {
+
+   @if ($breakponit == phone) { 
+    @media (max-width : 37.5em) {@content}}; //600px
+       
+   @if ($breakponit == tab-port) { 
+    @media (max-width : 56.25em) {@content}}; //900px
+         
+   @if ($breakponit == tab-land) { 
+     @media (max-width : 75em) {@content}}; //1200px
+            
+   @if ($breakponit == big-desk) { 
+    @media (min-width : 112.5em) {@content}}; //1800px
+      
+
 }

@@ -17,7 +17,6 @@
     -webkit-background-clip: text;
     background-image: linear-gradient(to right, $light-brown, $dark-brown);
     transition: all .2s;
-
     &:hover {
         transform: skewY(2deg) skewX(15deg);
         text-shadow: 0.5rem 1rem 2rem rgba($dark-brown , .2);
@@ -71,16 +70,28 @@
         &--p1 {
             top: -2rem;
             left: 0;
+            @include respond(tab-port) {
+                top: 2rem;
+                left: 0;
+            }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
+            @include respond(tab-port) {
+                top: 2rem;
+                right: 0;
+            }
         }
 
         &--p3 {
             left: 22%;
             top: 10rem;
+            @include respond(tab-port) {
+                top: 0;
+                
+            }
         }
 
         &:hover {

@@ -4,17 +4,33 @@
 }
 
 .c-news {
-    height: 50rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black , .8);
     background-image:
         linear-gradient(105deg, rgba($color-white , .8) 0%, rgba($color-white , .8) 50%, transparent 50%), url("https://shorturl.at/nsvAS");
-    background-size: 100%;
+    background-size: cover;
     background-position: center center;
-
+    @include respond(tab-land) {
+        height: 100%;
+        background-image:
+        linear-gradient(105deg, rgba($color-white , .8) 0%, rgba($color-white , .8) 65%, transparent 65%), url("https://shorturl.at/nsvAS");
+    }
+    @include respond(tab-port) {
+        height: 100%;
+        background-image:
+        linear-gradient(105deg, rgba($color-white , .8) 0%, rgba($color-white , .8) 100%), url("https://shorturl.at/nsvAS");
+    }
     &__section {
         width: 50%;
         padding: 6rem;
+        @include respond(tab-land) {
+            width: 65%;
+
+        }
+        @include respond(tab-port) {
+            width: 100%;
+
+        }
     }
 }
 
@@ -42,6 +58,9 @@
         &:focus:invalid {
             border-bottom: 3PX solid #FF4136;
         }
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__lable {
@@ -63,6 +82,9 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+        @include respond(phone) {
+            width: 100%;
+        }
     }
 
     &__radio-input {
