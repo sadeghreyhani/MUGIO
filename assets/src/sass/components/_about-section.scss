@@ -89,8 +89,7 @@
             left: 22%;
             top: 10rem;
             @include respond(tab-port) {
-                top: 0;
-                
+                top: 0;    
             }
         }
 

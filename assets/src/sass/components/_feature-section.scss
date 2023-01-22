@@ -1,12 +1,14 @@
 .c-features-section {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba($light-brown , .5), rgba($dark-brown , .5)), url("https://www.shorturl.at/ioINQ");
+    background-image: linear-gradient(to right bottom, rgba($light-brown , .5), rgba($dark-brown , .5)), url("../images/bg-image-2.jpg");
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
-    & > * {
+
+    &>* {
         transform: skewY(7deg);
     }
+
     @include respond(tab-port) {
         padding: 15rem 5rem;
     }
@@ -26,6 +28,7 @@
         color: transparent;
         -webkit-background-clip: text;
     }
+
     &__heading {
         font-weight: 700;
         text-transform: uppercase;

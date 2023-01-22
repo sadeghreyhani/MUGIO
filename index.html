@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/icon-font.css">
     <title>MUGIO</title>
 </head>
 
@@ -64,11 +63,19 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="https://picsum.photos/id/30/1280/901" alt="coffee 1"
+                        <img srcset="./assets/images/drink-1-sm.jpg 300w , ./assets/images/drink-1-lg.jpg 900w"
+                            sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw , 300px"
+                            src="./assets/images/drink-1-lg.jpg" alt="coffee 1"
                             class="composition__photo composition__photo--p1">
-                        <img src="https://picsum.photos/id/635/1280/901" alt="coffee 2"
+
+                        <img srcset="./assets/images/drink-2-sm.jpg 300w , ./assets/images/drink-2-lg.jpg 900w"
+                            sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw , 300px"
+                            src="./assets/images/drink-2-lg.jpg" alt="coffee 2"
                             class="composition__photo composition__photo--p2">
-                        <img src="https://picsum.photos/id/63/1280/901" alt="coffee 3"
+
+                        <img srcset="./assets/images/drink-3-sm.jpg 300w , ./assets/images/drink-3-lg.jpg 900w"
+                            sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw , 300px"
+                            src="./assets/images/drink-3-lg.jpg" alt="coffee 3"
                             class="composition__photo composition__photo--p3">
                     </div>
                 </div>
@@ -226,7 +233,9 @@
             <div class="row">
                 <div class="c-story u-margin-bottom-big">
                     <figure class="c-story__figure">
-                        <img src="https://shorturl.at/jnS59" alt="user" class="c-story__img">
+                        <img srcset="./assets/images/user-1-sm.jpg 300w , ./assets/images/user-1-lg.jpg 900w"
+                            sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw , 300px" alt="user 1"
+                            class="c-story__img">
                         <figcaption class="c-story__caption">Marry smith</figcaption>
                     </figure>
                     <div class="c-story__text">
@@ -242,7 +251,9 @@
                 </div>
                 <div class="c-story">
                     <figure class="c-story__figure">
-                        <img src="https://shorturl.at/bxyLY" alt="user" class="c-story__img">
+                        <img srcset="./assets/images/user-2-sm.jpg 300w , ./assets/images/user-2-lg.jpg 900w"
+                            sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw , 300px" alt="user 2"
+                            class="c-story__img">
                         <figcaption class="c-story__caption">jesica jordi</figcaption>
                     </figure>
                     <div class="c-story__text">
@@ -336,8 +347,10 @@
     <div class="c-popup" id="popup">
         <div class="c-popup__content">
             <div class="c-popup__left">
-                <img src="https://shorturl.at/osX46" alt="mug image" class="c-popup__img">
-                <img src="https://shorturl.at/osX46" alt="mug image" class="c-popup__img">
+                <img srcset="./assets/images/drink-4-sm.jpg 300w , ./assets/images/drink-4-lg.jpg 900w"
+                    sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw" alt="mug image 1" class="c-popup__img">
+                <img srcset="./assets/images/drink-5-sm.jpg 300w , ./assets/images/drink-5-lg.jpg 900w"
+                    sizes="(max-width: 900px) 20vw , (max-width: 600px) 30vw" alt="mug image 2" class="c-popup__img">
             </div>
             <div class="c-popup__right">
                 <a class="c-popup__close" href="#card-section">&times;</a>

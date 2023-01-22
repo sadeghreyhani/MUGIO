@@ -74,3 +74,8 @@ textarea {
 a {
   text-decoration: none;
 }
+
+::selection {
+  background-color: red;
+  color: beige;
+}

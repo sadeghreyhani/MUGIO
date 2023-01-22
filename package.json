@@ -4,7 +4,14 @@
   "description": "Landing Page For MUGIO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass assets/src/sass/main.scss assets/css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/src/sass/main.scss assets/css/main.compile.css",
+    "concat:css": "concat -o assets/css/main.concat.css assets/css/main.compile.css assets/css/icon-font.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 version' assets/css/main.concat.css -o assets/css/main.prefix.css",
+    "compress:css": "node-sass assets/css/main.prefix.css assets/css/main.css --output-style compressed" , 
+    "build:css" : "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "repository": {
     "type": "git",
@@ -17,10 +24,16 @@
   },
   "homepage": "https://github.com/sadeghreyhani/MUGIO#readme",
   "devDependencies": {
+    "concat": "^1.0.3",
     "gulp": "^4.0.2",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.1"
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "autoprefixer": "^10.4.13",
+    "save-dev": "0.0.1-security"
   }
 }
